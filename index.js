@@ -47,7 +47,9 @@ client.on('message', message => {
 client.on('guildMemberAdd', member => {
   if(active === true) {
     var role = member.guild.roles.find("name", "『 ➹ 』Camp | Member");
+    var role2 = member.guild.roles.find("name", "Rainbow");
     member.addRole(role).catch(console.error);
+    member.addRole(role2).catch(console.error);
   }
 })
 
